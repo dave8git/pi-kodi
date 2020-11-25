@@ -4,32 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dash-Board</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="sidebar"></section>
+    <section class="sidebar">
+      <div class="sidebar__logo--wrapper">
+        <div class="sidebar__logo">Just do it</div>
+      </div>
+      <div class="sidebar__menu-wrapper">
+        <ul class="sidebar__ul--styles line">
+          <li><a class="sidebar__link--styles" href="#general"><img src="/images/icons/general.svg">General</a></li>
+          <li><a class="sidebar__link--styles" href="#details"><img src="/images/icons/details.svg">Details</a></li>
+          <li><a class="sidebar__link--styles" href="#links"><img src="/images/icons/links.svg">Links</a></li>
+          <li><a class="sidebar__link--styles" href="#banners"><img src="/images/icons/banners.svg">Banners</a></li>
+          <li><a class="sidebar__link--styles" href="#personaldata"><img src="/images/icons/personaldata.svg">Personal Data</a></li>
+          <li><a class="sidebar__link--styles" href="#payout"><img src="/images/icons/payout.svg">Payout</a></li>
+          <li><a class="sidebar__link--styles" href="#postback"><img src="/images/icons/postback.svg">Postback</a></li>
+        </ul>
+      </div>
+      
+      <div class="sidebar__manager">
+        <h2>Your manager</h2>
+        <div class="sidebar__manager--photo">
+          <img src="/images/layer9.png" alt="manager">
+          <span class="sidebar__little-dot"></span>
+          <p>Mikhael E.</p>
+        </div>
+      </div>
+    </section>
     <div class="main-content">
-        <div class="topbar">
+        <section class="topbar">
             <div class="content-disapear-mobile">
-                <div class="cell-top-nav col-sm-0 col-md-6 col-lg-6">
+                <div class="topbar-nav col-sm-0 col-md-6 col-lg-6">
                   <img class="icon" src="/images/icons/wallet.svg">
                   <div>
                     <h2>$1,500.00</h2>
                   </div>
                   <img class="icon" src="/images/icons/arrow-down-small.svg">
                 </div>
-                <div class="cell-top-nav badges col-md-2 col-lg-2"><img class="icon" src="/images/icons/notification.svg"
+                <div class="topbar-nav dot col-md-2 col-lg-2"><img class="icon" src="/images/icons/notification.svg"
                     alt="">
                 </div>
-                <div class="cell-top-nav  col-md-6 col-lg-6">
+                <div class="topbar-nav col-md-6 col-lg-6">
                   <img class="icon" src="/images/icons/profile.svg">
                   <div class="blue-text">
                     <p>Leonardo Dicaprio</p>
                   </div>
                 </div>
-                <div class="cell-top-nav col-md-2 col-lg-2"><img class="icon" src="/images/icons/quit.svg" alt="">
+                <div class="topbar-nav col-md-2 col-lg-2"><img class="icon" src="/images/icons/quit.svg" alt="">
                 </div>
               </div>
+        </section>
+        <div id="pages">
+          <section id="general" class="content">
+            <div class="general section-shadow">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestias sint optio! Fugit, voluptas facilis eum dicta inventore quisquam ratione perspiciatis sint magni ea itaque.</p>
+            </div>
+          </section>
         </div>
     </div>
 </body>

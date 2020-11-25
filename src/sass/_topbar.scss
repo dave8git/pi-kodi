@@ -1,5 +1,6 @@
 .topbar {
   position: fixed;
+  top: 0;
   right: 0;
   background-color: #ffffff;
   display: -ms-flexbox;
@@ -9,6 +10,18 @@
   border-bottom: 1px solid #191919;
   width: calc(100% - 200px);
   z-index: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+.topbar h2 {
+  color: #979797;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.topbar p {
+    color: #4c6679;
+    font-size: 14px;
 }
 
 .content-disapear-mobile {
@@ -18,7 +31,7 @@
   justify-content: flex-end;
 }
 
-.cell-top-nav {
+.topbar-nav {
   display: -ms-flexbox;
   display: flex;
   height: 60px;
@@ -32,18 +45,24 @@
   transition: 0.3s;
 }
 
-.cell-top-nav:nth-child(1) img:nth-child(1) {
+.topbar-nav:nth-child(1) img:nth-child(1) {
   margin-top: 2px;
   margin-right: 8px;
 }
 
-.cell-top-nav:nth-child(1) img {
+.topbar-nav:nth-child(1) img {
   filter: invert(32%) sepia(11%) saturate(189%) hue-rotate(314deg)
     brightness(98%) contrast(84%);
 }
 
-.cell-top-nav img {
+.topbar-nav img {
   margin: 6px;
+}
+
+.topbar-nav:nth-child(1) img:nth-child(3) {
+  width: 13px;
+  margin-left: 12px;
+  color: yellow;
 }
 
 .icon {
@@ -55,11 +74,11 @@ img {
   cursor: pointer;
 }
 
-.cell-top-nav:nth-child(2) {
+.topbar:nth-child(2) {
   position: relative;
 }
 
-.cell-top-nav {
+.topbar-nav {
   display: -ms-flexbox;
   display: flex;
   height: 60px;
@@ -73,7 +92,11 @@ img {
   transition: 0.3s;
 }
 
-.badges:after {
+.dot {
+  position: relative;
+}
+
+.dot:after {
   content: " \25CF";
   font-size: 15px;
   color: #f58200;

@@ -6,3 +6,20 @@
   margin-left: 200px;
   width: calc(100% - 200px);
 }
+
+div#pages {
+  margin-top: 45px;
+  padding: 15px;
+  background-color: #F5F5F2;
+  min-height: 100vh;
+}
+
+.section-shadow {
+  background-color: #ffffff;
+  margin: 20px auto;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
