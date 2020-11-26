@@ -1,42 +1,60 @@
 h1 {
-    color: $headline-color;
-    font-weight: lighter;
-    font-family: $paragraph-font;
-    text-transform: uppercase;
-    font-size: $headline-font-size;
-    margin: 10px;
+  color: $headline-clr;
+  font-weight: lighter;
+  font-family: $paragraph-font;
+  text-transform: uppercase;
+  font-size: $headline-font-size;
+  margin: 10px;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  font-family: $roboto-font;
+  font-size: $paragraph-font-size;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: $roboto-font;
+  color: $headline-clr;
+  font-size: $paragraph-font-size;
+  padding: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  color: $paragraph-clr;
+  font-family: $paragraph-font;
+  font-weight: lighter;
+  font-size: $paragraph-font-size;
+}
+
+a {
+  color: $link-clr;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $activ-link-clr;
   }
-  
-  h3 {
-    padding: 0;
-    margin: 0;
-    font-family: $roboto-font;
-    font-size: $paragraph-font-size;
-    font-weight: 400;
-  }
-  
-  h2 {
-    font-family: $roboto-font;
-    color: $headline-color;
-    font-size: $paragraph-font-size;
-    padding: 20px;
-    font-weight: 600;
-    margin: 0;
-  }
-  
-  p {
-    color: $paragraph-color;
-    font-family: $paragraph-font;
-    font-weight: lighter;
-    font-size: $paragraph-font-size;
-  }
-  
-  a {
-    color: $link-color;
-    text-decoration: none;
-    cursor: pointer;
-  
-    &:hover {
-      color: $activ-link-color;
-    }
-  }
+}
+
+/* buttons  */
+.btn {
+  background-color: $button-clr;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 300px;
+  border-radius: 5px;
+  border: none;
+  color: $white-clr;
+  font-size: 18px;
+  display: inline-flex;
+  padding: 10px 22px;
+  font-family: $roboto-font;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
