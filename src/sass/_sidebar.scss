@@ -34,7 +34,7 @@ ul {
 }
 
 .sidebar__ul--styles li:hover a {
-  color: white;
+  color: $white-clr;
   margin-left: -4px;
 }
 
@@ -76,7 +76,7 @@ ul {
 
 .sidebar h2 {
   font-family: "Open Sans", Helvetica, Arial;
-  color: grey; 
+  color: $Headline-clr; 
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -95,7 +95,7 @@ ul {
     height: 10px;
     width: 10px;
     position: absolute;
-    background-color: #04AE00;
+    background-color: $green-dot-clr;
     left: 38px;
     top: 2px;
     z-index: 5;
@@ -111,6 +111,6 @@ ul {
 }
 
 .sidebar__manager p {
-  font-family: "Open Sans", Helvetica, Arial;
+  font-family: $paragraph-font;
   color: #56819f;
 }

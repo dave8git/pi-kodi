@@ -1,0 +1,42 @@
+h1 {
+    color: $headline-color;
+    font-weight: lighter;
+    font-family: $paragraph-font;
+    text-transform: uppercase;
+    font-size: $headline-font-size;
+    margin: 10px;
+  }
+  
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-family: $roboto-font;
+    font-size: $paragraph-font-size;
+    font-weight: 400;
+  }
+  
+  h2 {
+    font-family: $roboto-font;
+    color: $headline-color;
+    font-size: $paragraph-font-size;
+    padding: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  p {
+    color: $paragraph-color;
+    font-family: $paragraph-font;
+    font-weight: lighter;
+    font-size: $paragraph-font-size;
+  }
+  
+  a {
+    color: $link-color;
+    text-decoration: none;
+    cursor: pointer;
+  
+    &:hover {
+      color: $activ-link-color;
+    }
+  }
