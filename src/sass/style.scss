@@ -1,11 +1,26 @@
+/* general imports */
+
 @import "variables";
 @import "general_styles";
 @import "layout";
 @import "mixins";
 @import "normalize";
 @import "general";
+
+
+/* components */
+
 @import "components/rwd";
+@import "components/grey_button";
+@import "components/dot";
 @import "components/date_form";
 
-@import "sidebar";
+/*sections */
+
+@import "sections/stats_section";
+@import "sections/grey_buttons";
+
+/* views */
 @import "topbar";
+@import "sidebar";
+

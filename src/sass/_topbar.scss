@@ -92,15 +92,26 @@ img {
   transition: 0.3s;
 }
 
-.dot {
+// .dot-topbar {
+//   position: relative;
+// }
+
+// .dot-topbar:after {
+//   content: " \25CF";
+//   font-size: 15px;
+//   color: #f58200;
+//   position: absolute;
+//   top: 15px;
+//   right: 20px;
+// }
+
+.tobar-nav img {
   position: relative;
 }
 
-.dot:after {
-  content: " \25CF";
-  font-size: 15px;
-  color: #f58200;
-  position: absolute;
-  top: 15px;
-  right: 20px;
+.topbar-dot {
+  width: 9px;
+  height: 9px;
+  top: 18px;
+  right: 23px;
 }

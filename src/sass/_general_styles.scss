@@ -1,3 +1,13 @@
+/* global */ 
+
+.relative { 
+  position: relative;
+}
+
+.absolute { 
+  position: absolute;
+}
+
 h1 {
   color: $headline-clr;
   font-weight: lighter;
@@ -58,3 +68,27 @@ a {
   transition: 0.3s;
   cursor: pointer;
 }
+
+/* table general styles */
+table {
+  border-collapse: collapse;
+}
+.number-styles {
+  font-family: $roboto-font;
+  font-weight: lighter;
+  border: none;
+  border: 1px solid #e3e3e3;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  transition: .3s;
+}
+
+.number-styles:hover {
+  background-color: $table-hover-clr;
+}
+
+
+
+
+

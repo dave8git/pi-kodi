@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -45,8 +46,10 @@
                   </div>
                   <img class="icon" src="/images/icons/arrow-down-small.svg">
                 </div>
-                <div class="topbar-nav dot col-md-2 col-lg-2"><img class="icon" src="/images/icons/notification.svg"
+                <div class="topbar-nav relative col-md-2 col-lg-2">
+                  <img class="icon" src="/images/icons/notification.svg"
                     alt="">
+                  <div class="dot topbar-dot"></div>
                 </div>
                 <div class="topbar-nav col-md-6 col-lg-6">
                   <img class="icon" src="/images/icons/profile.svg">
@@ -71,7 +74,88 @@
                   <button class="date-form__refresh btn"><img class="icon" src="/images/icons/refresh.svg"></button>
                 </div>
               </div>
+              <div class="stats__box remove-border">
+                <table class="table container col-md-3 col-lg-4 ">
+                  <tr class="number-styles">
+                    <td>
+                      <h2>Visit Signups</h2>
+                    </td>
+                    <td>124</td>
+                  </tr>
+                  <tr class="number-styles">
+                    <td>
+                      <h2>FTD</h2>
+                    </td>
+                    <td>445</td>
+                  </tr>
+                </table>
+                <br>
+                <br>
+                <table class="table container  col-md-3 col-lg-4">
+                  <tr class="number-styles">
+                    <td>
+                      <h2>Net deposit</h2>
+                    </td>
+                    <td>564</td>
+                  </tr>
+                  <tr class="number-styles">
+                    <td>
+                      <h2>Turnover</h2>
+                    </td>
+                    <td>432</td>
+                  </tr>
+                </table>
+              </div>
+              <h2>Earnings chart</h2>
+              <div class="three-buttons__wrapper">
+                <button class="relative">
+                  <div class="dot buttons-dot"></div>
+                  <div>Signups</div>
+                </button>
+                <button class="relative">
+                  <div class="dot buttons-dot orange-dot"></div>
+                  <div>FTD</div>
+                </button>
+                <button class="relative">
+                  <div class="dot buttons-dot"></div>
+                  <div>earned</div>
+                </button>
+              </div>
+              <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+            <script>
+                let myChart = document.getElementById('myChart').getContext('2d');
+        
+                let massPopChart = new Chart(myChart, {
+                    type:'bar', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
+                    data:{
+                        labels:[ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10" ],
+                        datasets:[
+                        {
+                            label: "MorePopulation", 
+                            backgroundColor: "#80BFCA",
+                            data: [  190, 170, 220, 75, 430, 320, 120, 110, 710, 620 ]
+                        },
+                        {
+                            label: "Population", 
+                            backgroundColor: "#FF9A38",
+                            data: [ 350, 400, 300, 100, 450, 300, 180, 200, 210, 230 ]
+                        },
+                        {
+                            label: "EvenMorePopulation", 
+                        }
+                        ]
+                    },
+                    options:{}
+                }); 
+            </script>
+              
+            
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestias sint optio! Fugit, voluptas facilis eum dicta inventore quisquam ratione perspiciatis sint magni ea itaque.</p>
+            </div>
+            <div class="general section-shadow">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit necessitatibus beatae, doloribus, inventore aliquam quis nulla iste odit deleniti, ipsa id rerum est voluptatem.</p>
             </div>
           </section>
         </div>
