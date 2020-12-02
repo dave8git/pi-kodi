@@ -39,14 +39,6 @@ ul {
   margin-left: -4px;
 }
 
-.sidebar__ul--styles li a img {
-  height: 14px;
-  width: 16px;
-  margin: 0 10px;
-  filter: invert(57%) sepia(7%) saturate(0%) hue-rotate(175deg) brightness(102%)
-    contrast(98%);
-}
-
 .sidebar__ul--styles li:hover img {
   filter: invert(100%) sepia(7%) saturate(23%) hue-rotate(259deg)
     brightness(121%) contrast(100%);
@@ -116,4 +108,12 @@ ul {
 .sidebar__manager p {
   font-family: $paragraph-font;
   color: #56819f;
+}
+
+.sidebar__ul--styles li a img {
+  height: 14px;
+  width: 16px;
+  margin: 0 10px;
+  filter: invert(57%) sepia(7%) saturate(0%) hue-rotate(175deg) brightness(102%)
+    contrast(98%);
 }

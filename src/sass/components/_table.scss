@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+table tr {
+    transition: 0.3s;
+    border-bottom: 1px solid $date-form-line;
+}
+
+table tr:first-child {
+    border-top: 1px solid $date-form-line;
+}
+
+table td td:first-child {
+    padding-left: 15px;
+}
+
+table td:nth-child(1) h2, table td:nth-child(1) h2 {
+    padding-left: 15px;
+}
+
+table td, table th {
+    text-align: left;
+    padding: 0;
+}
+
+table tr:hover {
+    background-color: $date-form-line;
+}
+

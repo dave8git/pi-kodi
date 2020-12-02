@@ -1,10 +1,10 @@
-/* global */ 
+/* global */
 
-.relative { 
+.relative {
   position: relative;
 }
 
-.absolute { 
+.absolute {
   position: absolute;
 }
 
@@ -73,6 +73,7 @@ a {
 table {
   border-collapse: collapse;
 }
+
 .number-styles {
   font-family: $roboto-font;
   font-weight: lighter;
@@ -81,14 +82,9 @@ table {
   border-top: none;
   border-right: none;
   border-left: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .number-styles:hover {
   background-color: $table-hover-clr;
 }
-
-
-
-
-

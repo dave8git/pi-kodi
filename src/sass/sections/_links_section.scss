@@ -1,0 +1,33 @@
+.links__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.links__wrapper button {
+    margin: 25px auto;
+    padding: 0px 18px;
+}
+
+.links__wrapper .btn p {
+    font-family: $roboto-font;
+    color: white;
+    padding-left: 7px;
+    font-size: 18px;
+
+}
+
+.links__main {
+    // margin: 0 auto;
+}
+
+.links__main table {
+    width: 80%;
+}
+
+table tr .bin, table tr .link {
+    filter: $white-svg;
+}
+table tr:hover .bin, table tr:hover .link {
+    filter: $black-svg;
+    color: red;
+}

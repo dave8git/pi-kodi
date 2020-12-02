@@ -1,29 +1,26 @@
 .three-buttons__wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    width: 55%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 55%;
+  margin: 0 auto;
 }
 
 .three-buttons__wrapper button {
-    padding: 10px 13px;
-    margin-right: 15%;
-    text-transform: uppercase;
-    font-family: $roboto-font;
-    color: $headline-clr;
+  padding: 10px 13px;
+  margin-right: 15%;
+  text-transform: uppercase;
+  font-family: $roboto-font;
+  color: $headline-clr;
+  width: 100%;
 }
 
 .buttons-dot {
-    top: 14px;
-    left: 7px;
-    margin-right: 5px;
+  top: 14px;
+  left: 7px;
+  margin-right: 5px;
 }
 
 .chart-container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
-
-
-
-

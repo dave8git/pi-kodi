@@ -1,0 +1,9 @@
+.hamburger-content {
+        flex-direction: column;
+        align-items: center;
+        z-index: 4;
+        overflow-y: auto;
+        height: calc(100vh - 60px);
+        overflow-x: hidden;
+        background-color: black;
+}
