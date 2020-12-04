@@ -27,6 +27,19 @@
     padding: 0; 
 }
 
-.hamburger-content {
-    display: none;
+// .hamburger-content {
+//     display: none;
+// }
+
+.sidebar-top ul {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.little-dot {
+    width: 10px;
+    height: 10px;
+    background-color:green;
+    z-index: 11;
 }

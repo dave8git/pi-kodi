@@ -6,4 +6,35 @@
         height: calc(100vh - 60px);
         overflow-x: hidden;
         background-color: black;
+        display: none;
+        text-align: center;
+}
+
+.hamburger-content-visible {
+    display: block;
+}
+
+.hamburger-content .icon {
+    width: 39px;
+    height: 39px;
+    filter: invert(57%) sepia(7%) saturate(0%) hue-rotate(175deg) brightness(102%) contrast(98%);
+}
+
+.hamburger-content .icon:hover {
+    filter: invert(91%) sepia(57%) saturate(2805%) hue-rotate(359deg) brightness(104%) contrast(100%);
+}
+
+.hamburger-content .icon:last-of-type:hover {
+    filter: invert(14%) sepia(91%) saturate(6468%) hue-rotate(360deg) brightness(113%) contrast(114%);
+}
+
+.menu-sidebar-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 140px;
+}
+
+.hamburger-content {
+    
 }

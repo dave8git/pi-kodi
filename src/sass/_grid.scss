@@ -48,12 +48,19 @@
     .topbar {
         display: none;
     }
-    
-
+    div#pages {
+        margin-top: 0;
+    }
+    .sidebar__manager--photo {
+        display: inline;
+    }
   }
   
   @media(min-width: 768px) {
     @include grid('md');
+    .menu-logo-bar {
+        display: none;
+    }
   }
   
   @media(min-width: 992px) {
